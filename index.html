@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    <title>Portofolio Wahyu Hidayat</title>
+
+    <link rel="stylesheet" href="css/style.css">
     
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header class="main-header p-[9px]">
+        <div class="main-logo">
+            <img src="assets/logo-idas-LjyhUPRV.png" width="70" class="logo-banner" />
+        </div>
+
+        <nav class="flex gap-1">
+            <a class="border-2 rounded p-2 mr-4 title-menu" href="#home-section">Home</a>
+            <a class="border-2 rounded p-2 mr-4 title-menu" href="#profile-section">Our Profile</a>
+            <a class="border-2 rounded p-2 mr-4 title-menu" href="#portofolio-section">Portofolio</a>
+            <a class="border-2 rounded p-2 mr-4 title-menu" href="#message-section">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+        <section id="home-section" class="hero-section p-4 min-h-[500px]">
+            <h1 class="text-3xl font-bold mb-0"><span id="greet-name" class="greet-name"></span>Welcome to IDAS </h1>
+            <p class="text-lg">IDAS stands for Indonesia Digital Security, a certificate authority company dedicated to strengthening the digital landscape through trusted services. With expertise in digital signatures and electronic certificates, we ensure the highest level of security and authenticity in every transaction.
+
+Our solutions empower businesses to explore the digital realm with confidence, protect their data, and build trust among stakeholders. IDAS delivers efficient workflows and robust encryption, ensuring compliance with regulatory standards and industry best practices.
+
+With a commitment to excellence and innovation, we strive to be a pillar of digital security for companies of all sizes, providing customized solutions that adapt to evolving needs. Discover the reliability and efficiency of IDAS today, and begin your digital transformation journey with a trusted partner by your side.
+
+Translated with DeepL.com (free version).</p>
+        </section>
+
+        <hr />
+
+        <section id="profile-section" class="profile-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-0 greet-name" >Our Profile</h2>
+            <p class="text-lg">We are a dedicated team of Quality Assurance (QA) professionals committed to ensuring that every product we test meets the highest standards of quality, performance, and reliability. With a strong focus on detail, precision, and user satisfaction, we help development teams deliver flawless software solutions.
+Our expertise spans across manual and automated testing, covering functional, regression, performance, usability, and security testing. We work closely with developers, project managers, and stakeholders to identify issues early, streamline development cycles, and ensure on-time delivery of robust, user-friendly products.</p>
+        </section>
+
+        <hr />
+
+        <section id="portofolio-section" class="portfolio-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-0">Portofolio</h2>
+            <p class="text-lg">Showcase of my projects and accomplishments.</p>
+        </section>
+
+        <hr />
+
+        <section id="message-section" class="message-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-0">Message Us</h2>
+            <p class="text-lg">Feel free to reach out for collaborations or inquiries.</p>
+
+            <form>
+                <label for="name" class="block mb-2">Full Name:</label>
+                <input type="text" id="name-input" name="name" class="border p-2 mb-4 w-full" required>
+
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email-input" name="email" class="border p-2 mb-4 w-full" required>
+
+                <label for="message" class="block mb-2">Message:</label>
+                <textarea id="message-input" name="message" class="border p-2 mb-4 w-full" rows="4" required></textarea>
+            </form>
+
+            <button onclick="validateForm();" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content p-4 text-center">
+            <p class="text-sm">&copy; 2025 Wahyu Hidayat's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
