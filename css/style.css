@@ -1,0 +1,35 @@
+.main-logo {
+    height: 97px;
+    width: 97px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 100%;
+}
+.logo-banner{
+    margin-top: 36px;
+    margin-left: 10px;
+}
+
+.title-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.title-menu:hover{
+    background-color: rgb(252, 252, 252);
+    color: rgb(12, 45, 228);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greet-name{
+    color: brown;
+}
+
+header{
+    background-color: rgb(6, 28, 128);
+}
